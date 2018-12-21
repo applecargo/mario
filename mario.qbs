@@ -18,7 +18,10 @@ Project{
         ]
 
         of.addons: [
+            'ofxAruco',
+            'ofxCv',
             'ofxOpenCv',
+            'ofxPoco'
         ]
 
         // additional flags for the project. the of module sets some
@@ -58,10 +61,10 @@ Project{
     property bool makeOF: true  // use makfiles to compile the OF library
                                 // will compile OF only once for all your projects
                                 // otherwise compiled per project with qbs
-    
+
 
     property bool precompileOfMain: false  // precompile ofMain.h
-                                           // faster to recompile when including ofMain.h 
+                                           // faster to recompile when including ofMain.h
                                            // but might use a lot of space per project
 
     references: [FileInfo.joinPaths(of_root, "/libs/openFrameworksCompiled/project/qtcreator/openFrameworks.qbs")]
