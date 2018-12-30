@@ -12,9 +12,8 @@ Project{
         name: { return FileInfo.baseName(sourceDirectory) }
 
         files: [
-            'src/main.cpp',
-            'src/ofApp.cpp',
-            'src/ofApp.h',
+            'src/Main.cpp',
+            'src/Main.h',
         ]
 
         of.addons: [
